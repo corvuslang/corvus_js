@@ -1,0 +1,15 @@
+[package]
+name = "corvus_js"
+version = "0.1.0"
+authors = ["Stephen Sugden <me@stephensugden.com>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+stdweb = { git = "https://github.com/koute/stdweb" } # "0.4.1"
+# corvus_core = { git = "https://github.com/corvuslang/corvus_core", branch = "develop" }
+corvus_core = { path = "../corvus_core" }
+lazy_static = "*"
+serde = "*"
+serde_derive = "*"
