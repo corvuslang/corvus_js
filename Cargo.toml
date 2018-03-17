@@ -7,9 +7,11 @@ authors = ["Stephen Sugden <me@stephensugden.com>"]
 crate-type = ["cdylib"]
 
 [dependencies]
-stdweb = { git = "https://github.com/koute/stdweb" } # "0.4.1"
+stdweb = "0.4.2"
+stdweb-derive = "*"
 # corvus_core = { git = "https://github.com/corvuslang/corvus_core", branch = "develop" }
 corvus_core = { path = "../corvus_core" }
 lazy_static = "*"
 serde = "*"
 serde_derive = "*"
+serde_json="*"
